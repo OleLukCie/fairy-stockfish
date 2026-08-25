@@ -1,0 +1,11 @@
+[Event "Engine Match: Original vs E1_Bias0"]
+[Site "Local"]
+[Date "2026.08.22"]
+[Round "1"]
+[White "Original"]
+[Black "E1_Bias0"]
+[Result "1-0"]
+[Variant "Atomic"]
+[TimeControl "5.0s/move"]
+
+1. g1f3 f7f6 2. e2e3 d7d5 3. f3g5 f6g5 4. d1h5 g7g6 5. h5e5 c8e6 6. b1c3 b7b5 7. f1d3 f8g7 8. d3g6 g8f6 9. f2f3 b8d7 10. e5c7 e6h3 11. g2g4 e7e5 12. e3e4 a7a5 13. d2d3 h7h6 14. g4g5 h3f1 15. h2h3 f1e2 16. h1g1 e2d1 17. a2a3 a5a4 18. c1d2 d1e2 19. c3a2 b5b4 20. a3b4 f6g4 21. h3g4 a4a3 22. b2b3 d5e4 23. g5g6 e8c8 24. g6g7 h8g8 25. d2b4 h6h5 26. b4e7 d8d4 27. e7h4 d4d6 28. g1g5 e2f1 29. a2b4 f1h3 30. b4d5 c8b7 31. d5e7 g8g7 32. g5g8 d6d8 33. e7f5 a3a2 34. c2c4 e5e4 35. h4d8 h3f5 36. c4c5 e4d3 37. c5c6 b7c7 38. g8g7 c7d6 39. c6c7 d6e5 40. c7c8q e5d4 41. c8c3 d4d5 42. c3c5 d5e6 43. c5e5 1-0
