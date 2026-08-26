@@ -1,0 +1,95 @@
+PS D:\develop\chess> python e1_bias_recenter.py "D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue" "D:\develop\chess\NNUE\E1\atomic-2cf13ff256cc.nnue"
+======================================================================
+  E1: Bias Recentering Experiment
+======================================================================
+
+  Input:  D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+  Output: D:\develop\chess\NNUE\E1\atomic-2cf13ff256cc.nnue
+
+  Parsing NNUE...
+  Architecture: FT(45056x512) -> L1 -> L2 -> Out
+  Layer stacks: 8
+
+  Modifying output bias to 0...
+  Layer Stack 0: Old bias = 745, New bias = 0
+  Layer Stack 1: Old bias = 760, New bias = 0
+  Layer Stack 2: Old bias = 626, New bias = 0
+  Layer Stack 3: Old bias = 929, New bias = 0
+  Layer Stack 4: Old bias = 1326, New bias = 0
+  Layer Stack 5: Old bias = 1415, New bias = 0
+  Layer Stack 6: Old bias = 897, New bias = 0
+  Layer Stack 7: Old bias = 538, New bias = 0
+
+  Written: D:\develop\chess\NNUE\E1\atomic-2cf13ff256cc.nnue
+  File size: 47,721,371 bytes
+
+  E1 complete. Test this model in atomic mode.
+  Prediction: If E1 performs better than Original atomic,
+              the problem is calibration (bias offset).
+PS D:\develop\chess> python e2_scale_sweep.py "D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue" "D:\develop\chess\NNUE\E2"
+======================================================================
+  E2: Output Scale Sweep Experiment
+======================================================================
+
+  Input:  D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+  Output: D:\develop\chess\NNUE\E2
+
+  Parsing NNUE...
+  Architecture: FT(45056x512) -> L1 -> L2 -> Out
+
+  --- Scale = 0.5 ---
+  Layer Stack 0: Scaling 32 output weights by 0.5
+  Layer Stack 1: Scaling 32 output weights by 0.5
+  Layer Stack 2: Scaling 32 output weights by 0.5
+  Layer Stack 3: Scaling 32 output weights by 0.5
+  Layer Stack 4: Scaling 32 output weights by 0.5
+  Layer Stack 5: Scaling 32 output weights by 0.5
+  Layer Stack 6: Scaling 32 output weights by 0.5
+  Layer Stack 7: Scaling 32 output weights by 0.5
+  Written: D:\develop\chess\NNUE\E2\atomic_scale0.5.nnue
+
+  --- Scale = 1.5 ---
+  Layer Stack 0: Scaling 32 output weights by 1.5
+  Layer Stack 1: Scaling 32 output weights by 1.5
+  Layer Stack 2: Scaling 32 output weights by 1.5
+  Layer Stack 3: Scaling 32 output weights by 1.5
+  Layer Stack 4: Scaling 32 output weights by 1.5
+  Layer Stack 5: Scaling 32 output weights by 1.5
+  Layer Stack 6: Scaling 32 output weights by 1.5
+  Layer Stack 7: Scaling 32 output weights by 1.5
+  Written: D:\develop\chess\NNUE\E2\atomic_scale1.5.nnue
+
+  --- Scale = 2.0 ---
+  Layer Stack 0: Scaling 32 output weights by 2.0
+  Layer Stack 1: Scaling 32 output weights by 2.0
+  Layer Stack 2: Scaling 32 output weights by 2.0
+  Layer Stack 3: Scaling 32 output weights by 2.0
+  Layer Stack 4: Scaling 32 output weights by 2.0
+  Layer Stack 5: Scaling 32 output weights by 2.0
+  Layer Stack 6: Scaling 32 output weights by 2.0
+  Layer Stack 7: Scaling 32 output weights by 2.0
+  Written: D:\develop\chess\NNUE\E2\atomic_scale2.0.nnue
+
+======================================================================
+  E2 complete. Test all 3 models in atomic mode.
+  Compare against Original atomic (scale=1.0).
+PS D:\develop\chess> python e3_psqt_ablation.py "D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue" "D:\develop\chess\NNUE\E3\atomic-2cf13ff256cc.nnue"
+======================================================================
+  E3: PSQT Ablation Experiment
+======================================================================
+
+  Input:  D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+  Output: D:\develop\chess\NNUE\E3\atomic-2cf13ff256cc.nnue
+
+  Parsing NNUE...
+  Architecture: FT(45056x512) -> L1 -> L2 -> Out
+  PSQT buckets: 8
+
+  Ablating PSQT weights...
+  Zeroing 360,448 PSQT weights (8 buckets x 45056 features)
+
+  Written: D:\develop\chess\NNUE\E3\atomic-2cf13ff256cc.nnue
+  File size: 47,721,371 bytes
+
+  E3 complete. Test this model in atomic mode.
+  Compare against Original atomic (with PSQT).

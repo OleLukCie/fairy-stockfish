@@ -1,0 +1,371 @@
+================================================================================
+  NNUE PSQT DEGRADATION ANALYZER
+================================================================================
+
+Loading: nn-46832cfbead3.nnue
+  -> FT(45056x512) PSQT_buckets=8
+
+Loading: atomic-2cf13ff256cc.nnue
+  -> FT(45056x512) PSQT_buckets=8
+
+================================================================================
+  CHESS NETWORK ANALYSIS
+================================================================================
+
+  [FT Weights] int16
+    Count:              23,068,672
+    Mean:                    -4.0536
+    Std:                     44.5441
+    Min / Max:              -1020.00 /       930.00
+    Range:                   1950.00
+    Q25 / Median / Q75:       -21.00 /        -1.00 /        15.00
+    Sparsity (|w|<10):        30.88%
+    Sparsity (|w|<50):        84.33%
+    Zero Ratio:                5.29%
+    Shannon Entropy:          4.3091 bits
+    Kurtosis:                11.7232
+    Unique Values:      1,240 (0.01%)
+
+  [FT Biases] int16
+    Count:              512
+    Mean:                  -135.0020
+    Std:                     80.1406
+    Min / Max:               -423.00 /        86.00
+    Range:                    509.00
+    Q25 / Median / Q75:      -178.00 /      -129.00 /       -86.00
+    Sparsity (|w|<10):         1.76%
+    Sparsity (|w|<50):        10.16%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          7.0088 bits
+    Kurtosis:                 0.7493
+    Unique Values:      250 (48.83%)
+
+  [PSQT Weights] int32
+    Count:              360,448
+    Mean:                    71.5439
+    Std:                  19491.0424
+    Min / Max:             -48058.00 /     44876.00
+    Range:                  92934.00
+    Q25 / Median / Q75:    -12342.00 /        53.00 /     12375.00
+    Sparsity (|w|<10):         0.60%
+    Sparsity (|w|<50):         0.97%
+    Zero Ratio:                0.50%
+    Shannon Entropy:          7.0279 bits
+    Kurtosis:                -0.2243
+    Unique Values:      62,520 (17.35%)
+
+  [L1 Weights] int8
+    Count:              16,384
+    Mean:                     0.0033
+    Std:                     26.5728
+    Min / Max:               -127.00 /       127.00
+    Range:                    254.00
+    Q25 / Median / Q75:       -13.00 /         0.00 /        14.00
+    Sparsity (|w|<10):        37.31%
+    Sparsity (|w|<50):        93.25%
+    Zero Ratio:                1.98%
+    Shannon Entropy:          6.6725 bits
+    Kurtosis:                 2.8773
+    Unique Values:      245 (1.50%)
+
+  [L1 Biases] int32
+    Count:              16
+    Mean:                 -1010.6875
+    Std:                   5494.5762
+    Min / Max:             -11907.00 /      8796.00
+    Range:                  20703.00
+    Q25 / Median / Q75:     -4248.00 /      1337.00 /      3781.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         0.00%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          3.6250 bits
+    Kurtosis:                -0.7373
+    Unique Values:      16 (100.00%)
+
+  [L2 Weights] int8
+    Count:              512
+    Mean:                     2.0781
+    Std:                     47.5477
+    Min / Max:               -127.00 /       127.00
+    Range:                    254.00
+    Q25 / Median / Q75:       -25.00 /         2.00 /        30.00
+    Sparsity (|w|<10):        19.92%
+    Sparsity (|w|<50):        73.05%
+    Zero Ratio:                0.78%
+    Shannon Entropy:          7.1804 bits
+    Kurtosis:                 0.4588
+    Unique Values:      178 (34.77%)
+
+  [L2 Biases] int32
+    Count:              32
+    Mean:                  -653.3125
+    Std:                   3632.1288
+    Min / Max:             -10714.00 /      6102.00
+    Range:                  16816.00
+    Q25 / Median / Q75:     -2456.00 /      -425.00 /      1505.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         0.00%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          4.7500 bits
+    Kurtosis:                 0.6158
+    Unique Values:      32 (100.00%)
+
+  [Out Weights] int8
+    Count:              32
+    Mean:                     2.7812
+    Std:                     41.6659
+    Min / Max:                -83.00 /       103.00
+    Range:                    186.00
+    Q25 / Median / Q75:       -31.00 /        15.00 /        36.00
+    Sparsity (|w|<10):         3.12%
+    Sparsity (|w|<50):        84.38%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          4.6875 bits
+    Kurtosis:                -0.4868
+    Unique Values:      27 (84.38%)
+
+  [Out Biases] int32
+    Count:              1
+    Mean:                   -68.0000
+    Std:                      0.0000
+    Min / Max:                -68.00 /       -68.00
+    Range:                      0.00
+    Q25 / Median / Q75:       -68.00 /       -68.00 /       -68.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         0.00%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          0.0000 bits
+    Kurtosis:                    nan
+    Unique Values:      1 (100.00%)
+
+================================================================================
+  ATOMIC NETWORK ANALYSIS
+================================================================================
+
+  [FT Weights] int16
+    Count:              23,068,672
+    Mean:                    -9.6267
+    Std:                     56.8403
+    Min / Max:              -1019.00 /       676.00
+    Range:                   1695.00
+    Q25 / Median / Q75:       -36.00 /        -5.00 /        19.00
+    Sparsity (|w|<10):        21.93%
+    Sparsity (|w|<50):        71.79%
+    Zero Ratio:                4.76%
+    Shannon Entropy:          5.0022 bits
+    Kurtosis:                 4.5609
+    Unique Values:      1,183 (0.01%)
+
+  [FT Biases] int16
+    Count:              512
+    Mean:                  -142.0332
+    Std:                     65.5472
+    Min / Max:               -290.00 /       119.00
+    Range:                    409.00
+    Q25 / Median / Q75:      -183.00 /      -152.00 /      -108.00
+    Sparsity (|w|<10):         0.78%
+    Sparsity (|w|<50):         8.79%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          6.9168 bits
+    Kurtosis:                 0.9739
+    Unique Values:      213 (41.60%)
+
+  [PSQT Weights] int32
+    Count:              360,448
+    Mean:                  -227.1971
+    Std:                  12537.9243
+    Min / Max:             -47616.00 /     43809.00
+    Range:                  91425.00
+    Q25 / Median / Q75:     -8486.00 /       -67.00 /      8442.00
+    Sparsity (|w|<10):         0.45%
+    Sparsity (|w|<50):         0.83%
+    Zero Ratio:                0.39%
+    Shannon Entropy:          6.9626 bits
+    Kurtosis:                 0.5566
+    Unique Values:      53,694 (14.90%)
+
+  [L1 Weights] int8
+    Count:              16,384
+    Mean:                     0.2465
+    Std:                     20.6624
+    Min / Max:               -127.00 /       127.00
+    Range:                    254.00
+    Q25 / Median / Q75:       -11.00 /         0.00 /        11.00
+    Sparsity (|w|<10):        45.00%
+    Sparsity (|w|<50):        96.94%
+    Zero Ratio:                3.69%
+    Shannon Entropy:          6.3063 bits
+    Kurtosis:                 3.3162
+    Unique Values:      207 (1.26%)
+
+  [L1 Biases] int32
+    Count:              16
+    Mean:                   369.6875
+    Std:                   3848.8229
+    Min / Max:              -6714.00 /      6644.00
+    Range:                  13358.00
+    Q25 / Median / Q75:     -1273.00 /       -84.00 /      4460.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         6.25%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          3.8750 bits
+    Kurtosis:                -0.8566
+    Unique Values:      16 (100.00%)
+
+  [L2 Weights] int8
+    Count:              512
+    Mean:                    -1.8066
+    Std:                     32.8476
+    Min / Max:               -126.00 /       119.00
+    Range:                    245.00
+    Q25 / Median / Q75:       -18.00 /        -1.00 /        16.00
+    Sparsity (|w|<10):        29.10%
+    Sparsity (|w|<50):        87.11%
+    Zero Ratio:                2.93%
+    Shannon Entropy:          6.7260 bits
+    Kurtosis:                 1.3409
+    Unique Values:      145 (28.32%)
+
+  [L2 Biases] int32
+    Count:              32
+    Mean:                  -553.9062
+    Std:                   2567.9069
+    Min / Max:              -5356.00 /      5026.00
+    Range:                  10382.00
+    Q25 / Median / Q75:     -2059.00 /       -19.00 /      1046.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         3.12%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          4.8750 bits
+    Kurtosis:                -0.3924
+    Unique Values:      32 (100.00%)
+
+  [Out Weights] int8
+    Count:              32
+    Mean:                     2.7500
+    Std:                     28.0468
+    Min / Max:                -37.00 /        85.00
+    Range:                    122.00
+    Q25 / Median / Q75:       -19.00 /         1.00 /        24.00
+    Sparsity (|w|<10):         9.38%
+    Sparsity (|w|<50):        96.88%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          4.6875 bits
+    Kurtosis:                 0.2012
+    Unique Values:      27 (84.38%)
+
+  [Out Biases] int32
+    Count:              1
+    Mean:                   745.0000
+    Std:                      0.0000
+    Min / Max:                745.00 /       745.00
+    Range:                      0.00
+    Q25 / Median / Q75:       745.00 /       745.00 /       745.00
+    Sparsity (|w|<10):         0.00%
+    Sparsity (|w|<50):         0.00%
+    Zero Ratio:                0.00%
+    Shannon Entropy:          0.0000 bits
+    Kurtosis:                    nan
+    Unique Values:      1 (100.00%)
+
+================================================================================
+  CHESS PSQT BUCKET ANALYSIS
+================================================================================
+
+  [PSQT Buckets] 8 buckets x 45056 features
+    Bucket 0: mean=    392.49 std=  19168.57 range=    90294.00
+    Bucket 1: mean=    269.67 std=  19336.25 range=    89089.00
+    Bucket 2: mean=     85.66 std=  19484.67 range=    89109.00
+    Bucket 3: mean=    -87.34 std=  19708.73 range=    88684.00
+    Bucket 4: mean=   -137.26 std=  19726.59 range=    90558.00
+    Bucket 5: mean=   -137.05 std=  19594.52 range=    88281.00
+    Bucket 6: mean=     43.71 std=  19473.05 range=    86313.00
+    Bucket 7: mean=    142.47 std=  19422.94 range=    82853.00
+
+    Pairwise Bucket L1 Distances (mean absolute difference):
+      B0 vs B1:       562.86
+      B0 vs B2:       883.88
+      B0 vs B3:      1217.14
+      B0 vs B4:      1305.81
+      B0 vs B5:      1290.19
+      B0 vs B6:      1088.59
+      B0 vs B7:      1002.20
+      B1 vs B2:       666.63
+      B1 vs B3:       979.48
+      B1 vs B4:      1122.75
+      B1 vs B5:      1089.38
+      B1 vs B6:       941.41
+      B1 vs B7:       936.55
+      B2 vs B3:       688.98
+      B2 vs B4:       812.66
+      B2 vs B5:       869.18
+      B2 vs B6:       836.90
+      B2 vs B7:       994.88
+      B3 vs B4:       579.53
+      B3 vs B5:       687.08
+      B3 vs B6:       900.67
+      B3 vs B7:      1064.73
+      B4 vs B5:       600.83
+      B4 vs B6:       823.11
+      B4 vs B7:      1055.16
+      B5 vs B6:       689.11
+      B5 vs B7:       905.19
+      B6 vs B7:       592.09
+
+    Summary:
+      Mean distance:        899.54
+      Std distance:         209.32
+      Min distance:         562.86
+      Max distance:        1305.81
+      CV of distances:      0.2327
+
+================================================================================
+  ATOMIC PSQT BUCKET ANALYSIS
+================================================================================
+
+  [PSQT Buckets] 8 buckets x 45056 features
+    Bucket 0: mean=   -180.07 std=  11932.21 range=    90778.00
+    Bucket 1: mean=   -390.09 std=  12396.47 range=    90130.00
+    Bucket 2: mean=   -448.12 std=  12605.77 range=    80646.00
+    Bucket 3: mean=   -332.52 std=  12642.93 range=    80657.00
+    Bucket 4: mean=   -211.83 std=  12679.83 range=    80646.00
+    Bucket 5: mean=   -105.88 std=  12680.52 range=    80646.00
+    Bucket 6: mean=    -60.36 std=  12645.47 range=    80646.00
+    Bucket 7: mean=    -88.72 std=  12695.08 range=    80646.00
+
+    Pairwise Bucket L1 Distances (mean absolute difference):
+      B0 vs B1:       917.81
+      B0 vs B2:      1174.01
+      B0 vs B3:      1238.09
+      B0 vs B4:      1248.73
+      B0 vs B5:      1264.10
+      B0 vs B6:      1270.57
+      B0 vs B7:      1296.56
+      B1 vs B2:       956.55
+      B1 vs B3:      1030.22
+      B1 vs B4:      1083.71
+      B1 vs B5:      1106.71
+      B1 vs B6:      1143.71
+      B1 vs B7:      1167.65
+      B2 vs B3:       705.56
+      B2 vs B4:       783.28
+      B2 vs B5:       855.12
+      B2 vs B6:       916.83
+      B2 vs B7:       968.13
+      B3 vs B4:       530.34
+      B3 vs B5:       612.88
+      B3 vs B6:       692.55
+      B3 vs B7:       758.54
+      B4 vs B5:       472.94
+      B4 vs B6:       553.08
+      B4 vs B7:       626.34
+      B5 vs B6:       434.36
+      B5 vs B7:       506.26
+      B6 vs B7:       426.31
+
+    Summary:
+      Mean distance:        883.60
+      Std distance:         284.92
+      Min distance:         426.31
+      Max distance:        1296.56
+      CV of distances:      0.3224

@@ -1,0 +1,192 @@
+PS D:\develop\chess> python nnue_analyze.py
+====================================================================================================
+  NNUE NETWORK WEIGHT ANALYZER
+  Comparing: Chess NNUE vs Atomic NNUE
+  Using Fairy-Stockfish variant-nnue-pytorch format
+====================================================================================================
+
+Chess:  D:\develop\chess\NNUE\Original\nn-46832cfbead3.nnue
+Atomic: D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+Output: D:\develop\chess\data\nnue_analysis
+
+----------------------------------------------------------------------------------------------------
+  PARSING CHESS NNUE
+----------------------------------------------------------------------------------------------------
+  File: nn-46832cfbead3
+    Version: 0x7AF32F20
+    Hash: 0x3C103E72
+    Description: Network trained with the https://github.com/glinscott/nnue-pytorch trainer....
+    FT Hash: 0x5F2348B8
+    Remaining data: 47,721,280 bytes
+    Detected: FT(45056x512) -> L1(1024x16) -> L2(16x32) -> Out(32x1)
+    PSQT buckets: 8, Layer stacks: 8
+    Expected: 47,721,284 bytes | Actual: 47,721,280 bytes | Diff: 4
+    Parsed: 47,721,280 / 47,721,280 bytes (100.0%)
+    Weights: FT(23,068,672) PSQT(360,448)
+    Layer stacks: 8
+      LS0: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS1: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS2: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS3: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS4: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS5: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS6: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS7: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+
+----------------------------------------------------------------------------------------------------
+  PARSING ATOMIC NNUE
+----------------------------------------------------------------------------------------------------
+  File: atomic-2cf13ff256cc
+    Version: 0x7AF32F20
+    Hash: 0x3C103E72
+    Description: Network trained with the https://github.com/glinscott/nnue-pytorch trainer....
+    FT Hash: 0x5F2348B8
+    Remaining data: 47,721,280 bytes
+    Detected: FT(45056x512) -> L1(1024x16) -> L2(16x32) -> Out(32x1)
+    PSQT buckets: 8, Layer stacks: 8
+    Expected: 47,721,284 bytes | Actual: 47,721,280 bytes | Diff: 4
+    Parsed: 47,721,280 / 47,721,280 bytes (100.0%)
+    Weights: FT(23,068,672) PSQT(360,448)
+    Layer stacks: 8
+      LS0: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS1: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS2: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS3: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS4: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS5: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS6: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+      LS7: L1(16,384w/16b) L2(512w/32b) Out(32w/1b)
+
+====================================================================================================
+  NETWORK STATISTICS COMPARISON
+  Left:  nn-46832cfbead3 (chess NNUE)
+  Right: atomic-2cf13ff256cc (atomic NNUE)
+====================================================================================================
+
+  FT_weights:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                            23068672                     23068672                0
+    mean                              -4.0536                      -9.6267          -5.5732
+    std                               44.5441                      56.8403          12.2962
+    min                            -1020.0000                   -1019.0000           1.0000
+    max                              930.0000                     676.0000        -254.0000
+    median                            -1.0000                      -5.0000          -4.0000
+    sparsity                           30.88%                       21.93%           -8.94%
+
+  FT_biases:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                 512                          512                0
+    mean                            -135.0020                    -142.0332          -7.0312
+    std                               80.1406                      65.5472         -14.5934
+    min                             -423.0000                    -290.0000         133.0000
+    max                               86.0000                     119.0000          33.0000
+    median                          -129.0000                    -152.0000         -23.0000
+    sparsity                            1.76%                        0.78%           -0.98%
+
+  PSQT_weights:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                              360448                       360448                0
+    mean                              71.5439                    -227.1971        -298.7411
+    std                            19491.0424                   12537.9243       -6953.1181
+    min                           -48058.0000                  -47616.0000         442.0000
+    max                            44876.0000                   43809.0000       -1067.0000
+    median                            53.0000                     -67.0000        -120.0000
+    sparsity                            0.60%                        0.45%           -0.15%
+
+  L1_weights:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                               16384                        16384                0
+    mean                               0.0033                       0.2465           0.2432
+    std                               26.5728                      20.6624          -5.9104
+    min                             -127.0000                    -127.0000           0.0000
+    max                              127.0000                     127.0000           0.0000
+    median                             0.0000                       0.0000           0.0000
+    sparsity                           37.31%                       45.00%            7.68%
+
+  L1_biases:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                  16                           16                0
+    mean                           -1010.6875                     369.6875        1380.3750
+    std                             5494.5762                    3848.8229       -1645.7532
+    min                           -11907.0000                   -6714.0000        5193.0000
+    max                             8796.0000                    6644.0000       -2152.0000
+    median                          1337.0000                     -84.0000       -1421.0000
+    sparsity                            0.00%                        0.00%            0.00%
+
+  L2_weights:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                 512                          512                0
+    mean                               2.0781                      -1.8066          -3.8848
+    std                               47.5477                      32.8476         -14.7001
+    min                             -127.0000                    -126.0000           1.0000
+    max                              127.0000                     119.0000          -8.0000
+    median                             2.0000                      -1.0000          -3.0000
+    sparsity                           19.92%                       29.10%            9.18%
+
+  L2_biases:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                  32                           32                0
+    mean                            -653.3125                    -553.9062          99.4062
+    std                             3632.1288                    2567.9069       -1064.2219
+    min                           -10714.0000                   -5356.0000        5358.0000
+    max                             6102.0000                    5026.0000       -1076.0000
+    median                          -425.0000                     -19.0000         406.0000
+    sparsity                            0.00%                        0.00%            0.00%
+
+  Out_weights:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                  32                           32                0
+    mean                               2.7812                       2.7500          -0.0312
+    std                               41.6659                      28.0468         -13.6190
+    min                              -83.0000                     -37.0000          46.0000
+    max                              103.0000                      85.0000         -18.0000
+    median                            15.0000                       1.0000         -14.0000
+    sparsity                            3.12%                        9.38%            6.25%
+
+  Out_biases:
+    Metric            nn-46832cfbead3 (chess)          atomic-2cf13ff256cc             Diff
+    ------------ ---------------------------- ---------------------------- ----------------
+    count                                   1                            1                0
+    mean                             -68.0000                     745.0000         813.0000
+    std                                0.0000                       0.0000           0.0000
+    min                              -68.0000                     745.0000         813.0000
+    max                              -68.0000                     745.0000         813.0000
+    median                           -68.0000                     745.0000         813.0000
+    sparsity                            0.00%                        0.00%            0.00%
+
+----------------------------------------------------------------------------------------------------
+  GENERATING PLOTS
+----------------------------------------------------------------------------------------------------
+
+  1. Weight Distribution Histograms:
+    Saved: D:\develop\chess\data\nnue_analysis\hist_FT_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_FT_Biases.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_PSQT_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_L1_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_L1_Biases.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_L2_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_L2_Biases.png
+    Saved: D:\develop\chess\data\nnue_analysis\hist_Out_Weights.png
+
+  2. Weight Difference Heatmaps:
+    Saved: D:\develop\chess\data\nnue_analysis\diff_L1_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\diff_L2_Weights.png
+    Saved: D:\develop\chess\data\nnue_analysis\diff_Out_Weights.png
+
+  3. Per-Neuron Variance:
+    Saved: D:\develop\chess\data\nnue_analysis\variance_layer2.png
+    Top 5 changed neurons: [12, 6, 15, 9, 11]
+
+  All plots saved to: D:\develop\chess\data\nnue_analysis
+
+====================================================================================================
+  ANALYSIS COMPLETE
+====================================================================================================

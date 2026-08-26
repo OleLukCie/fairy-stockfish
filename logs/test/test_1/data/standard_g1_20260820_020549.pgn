@@ -1,0 +1,11 @@
+[Event "Engine Match: Original vs Swapped"]
+[Site "Local"]
+[Date "2026.08.20"]
+[Round "1"]
+[White "Original"]
+[Black "Swapped"]
+[Result "1-0"]
+[Variant "Chess"]
+[TimeControl "5.0s/move"]
+
+1. e2e4 g8f6 2. e4e5 d7d5 3. e5f6 e7f6 4. d2d4 f8b4 5. c2c3 e8g8 6. c3b4 a7a5 7. b4b5 d8e7 8. c1e3 c8g4 9. d1g4 e7b4 10. b1c3 b4b2 11. a1c1 f8e8 12. e1d1 c7c6 13. g1f3 h7h5 14. g4f5 b2a3 15. e3d2 b8d7 16. f5d7 g7g6 17. b5b6 e8e7 18. d7h3 a5a4 19. h3h4 e7e6 20. h4f4 a8e8 21. f1d3 h5h4 22. h1g1 c6c5 23. d3b5 f6f5 24. b5e8 f7f6 25. f4c7 g6g5 26. e8g6 e6e7 27. c7e7 a3b3 28. a2b3 a4a3 29. e7h7 g8f8 30. h7f7 1-0

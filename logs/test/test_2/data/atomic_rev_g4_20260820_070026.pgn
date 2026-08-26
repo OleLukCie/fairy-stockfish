@@ -1,0 +1,11 @@
+[Event "Engine Match: Swapped vs Original"]
+[Site "Local"]
+[Date "2026.08.20"]
+[Round "1"]
+[White "Swapped"]
+[Black "Original"]
+[Result "1/2-1/2"]
+[Variant "Atomic"]
+[TimeControl "1.0s/move"]
+
+1. g1h3 h7h6 2. e2e3 e7e6 3. b1c3 c7c6 4. h3f4 f8b4 5. f4h5 g7g6 6. h5g7 e8f8 7. d2d4 d7d5 8. d1g4 d8h4 9. g4h4 e6e5 10. a2a3 b8a6 11. e3e4 e5d4 12. a3b4 a6b4 13. e4d5 c8e6 14. c1f4 g8f6 15. g7e8 f6g4 16. f2f3 g4e3 17. f1a6 f7f6 18. a6b7 e3g2 19. f4d6 f8g8 20. e8f6 h8h7 21. f3f4 h7f7 22. e1e2 f7f5 23. d6e5 b4d5 24. h2h3 a7a5 25. a1g1 f5f4 26. h3h4 d5e3 27. b2b3 g8f8 28. g1g3 g6g5 29. g3f3 f8e8 30. h4g5 h6h5 31. f3f8 e8e7 32. f8f6 a5a4 33. f6e6 e7f7 34. b3a4 h5h4 35. e6f6 f7g7 36. f6g6 g7f7 37. g6f6 f7e7 38. f6e6 e7d8 39. e6e8 d8d7 40. e8e7 d7c8 41. e7h7 c8d8 42. h7f7 h4h3 43. f7e7 h3h2 44. c2c4 e3g4 45. e7e8 d8d7 46. e8e7 d7d8 47. e7e8 d8d7 48. e8e7 d7d8 1/2-1/2

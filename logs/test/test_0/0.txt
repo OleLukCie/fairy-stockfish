@@ -1,0 +1,322 @@
+PS D:\develop\chess> python engine_match.py
+======================================================================
+  ENGINE vs ENGINE - Pure UCI + Draw Detection
+  3-fold repetition & 50-move rule by Python
+======================================================================
+
+Engine: D:\develop\chess\engine\fairy-stockfish-largeboard_x86-64-modern.exe
+Output: D:\develop\chess\data
+Draw detection: 3-fold rep, 50-move rule
+
+----------------------------------------------------------------------
+  STANDARD: CHESS
+  White: Original | Black: Swapped
+----------------------------------------------------------------------
+  Starting Original...
+  Original started
+  Starting Swapped...
+  Swapped started
+    EvalFile = D:\develop\chess\NNUE\Original\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Original ready (chess)
+    EvalFile = D:\develop\chess\NNUE\Swapped\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Swapped\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Swapped ready (chess)
+
+============================================================
+Match: Original (W) vs Swapped (B)
+Variant: chess
+============================================================
+
+    1. d2d4      e7e6
+    2. e2e4      d7d5
+    3. b1c3      g8f6
+    4. c1g5      h7h6
+    5. g5f6      d8f6
+    6. e4d5      f8b4
+    7. f1b5      c7c6
+    8. d5c6      b7c6
+    9. b5e2      e8g8
+   10. g1f3      g8h8
+   11. e1g1      b8d7
+   12. e2d3      g7g5
+   13. d1e2      a8b8
+   14. c3e4      f6g7
+   15. c2c3      b4e7
+   16. e4g3      g5g4
+   17. f3e5      d7e5
+   18. d4e5      f8d8
+   19. f2f3      d8d5
+   20. a1e1      g4f3
+   21. f1f3      d5d3
+   22. e2d3      b8b2
+   23. d3f1      g7g6
+   24. f3f7      c8a6
+   25. f1f3      e7c5
+   26. g1h1      a6c4
+   27. f7f6      g6g7
+   28. f3c6      c5f2
+   29. g3h5      b2b8
+   30. h5g7      c4d3
+   31. g7h5      d3g6
+   32. f6g6      a7a6
+   33. g6h6      h8g8
+   34. c6e6      g8f8
+   35. h6h8
+
+  Game over: 1-0
+
+
+  Result: 1-0
+  Total half-moves: 69
+  Saved: D:\develop\chess\data\standard_20260820_014137.pgn
+  Original stopped.
+  Swapped stopped.
+
+----------------------------------------------------------------------
+  ATOMIC: ATOMIC
+  White: Original | Black: Swapped
+----------------------------------------------------------------------
+  Starting Original...
+  Original started
+  Starting Swapped...
+  Swapped started
+    EvalFile = D:\develop\chess\NNUE\Original\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Original ready (atomic)
+    EvalFile = D:\develop\chess\NNUE\Swapped\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Swapped\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Swapped ready (atomic)
+
+============================================================
+Match: Original (W) vs Swapped (B)
+Variant: atomic
+============================================================
+
+    1. g1h3      f7f6
+    2. e2e3      e7e6
+    3. h3f4      g7g6
+    4. f4h5      f8e7
+    5. h5g7      e8f8
+    6. g7e8      c7c5
+    7. f2f3      d7d5
+    8. c2c3      g8h6
+    9. e3e4      b8a6
+   10. d2d3      c8d7
+   11. a2a3      d5d4
+   12. b2b3      c5c4
+   13. e8d6      c4b3
+   14. a3a4      a6b4
+   15. e1f2      b4c2
+   16. g2g4      d8a5
+   17. f2g1      c2a1
+   18. d1e1      d4c3
+   19. e1a5      b7b5
+   20. h2h4      e6e5
+   21. h1h2      b5b4
+   22. h2b2      b4b3
+   23. d3d4      f6f5
+   24. f3f4      a7a5
+   25. h4h5      h6g4
+   26. g1h1      g6g5
+   27. d6c8      d7c8
+   28. d4d5      g5g4
+   29. d5d6      e7h4
+   30. h5h6      g4g3
+   31. h1g2      a8c8
+   32. f1c4      c8c4
+   33. d6d7      f8f7
+   34. b2d2      h8d8
+   35. c1b2      h4e7
+   36. d2d1      e7a3
+   37. b2c3      a3b4
+   38. c3b2      b4c3
+   39. b2a3      c3b4
+   40. a3b2      b4c3
+   41. b2a3      c3d2
+   42. a3b2      d2c1
+   43. b2c3      c1b2
+   44. c3d2      b2c3
+   45. d2c1      c3b2
+   46. c1d2      f5e4
+   47. f4e5      b2d4
+   48. d2g5      b3b2
+   49. g5d8      d4b6
+   50. d1d6      b6d8
+   51. d6e6      b2b1q
+   52. e6f6      f7e7
+   53. f6e6      e7f8
+   54. e6f6      f8e7
+   55. f6e6      e7f8
+   56. e6f6
+  Draw by 3-fold repetition (position seen 3 times)
+
+  Result: 1/2-1/2
+  Total half-moves: 112
+  Saved: D:\develop\chess\data\atomic_20260820_014336.pgn
+  Original stopped.
+  Swapped stopped.
+
+----------------------------------------------------------------------
+  STANDARD_REV: CHESS
+  White: Swapped | Black: Original
+----------------------------------------------------------------------
+  Starting Swapped...
+  Swapped started
+  Starting Original...
+  Original started
+    EvalFile = D:\develop\chess\NNUE\Swapped\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Swapped\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Swapped ready (chess)
+    EvalFile = D:\develop\chess\NNUE\Original\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Original ready (chess)
+
+============================================================
+Match: Swapped (W) vs Original (B)
+Variant: chess
+============================================================
+
+    1. b1c3      d7d5
+    2. d2d4      g8f6
+    3. c1f4      c7c5
+    4. e2e3      c5d4
+    5. d1d4      b8c6
+    6. f1b5      c8d7
+    7. b5c6      b7c6
+    8. g1f3      e7e6
+    9. f4e5      c6c5
+   10. d4f4      f8e7
+   11. e1g1      e8g8
+   12. h2h3      f6e8
+   13. e3e4      d5d4
+   14. a1d1      f7f6
+   15. e5d4      c5d4
+   16. f3d4      e6e5
+   17. f4d2      e5d4
+   18. d2d4      d7e6
+   19. c3d5      e6d5
+   20. e4d5      d8c7
+   21. d4a4      a8c8
+   22. d1e1      e7d6
+   23. c2c3      f6f5
+   24. e1e6      e8f6
+   25. a4c6      d6h2
+   26. g1h1      c7f7
+   27. c6a4      h2b8
+   28. f1e1      f6d5
+   29. a4d4      c8d8
+   30. d4a4      d5f4
+   31. e6e7      f7g6
+   32. g2g3      f4h3
+   33. e1f1      f5f4
+   34. a4c4      g8h8
+   35. g3g4      f4f3
+   36. c4e6      g6g5
+   37. e6e4      g5h4
+   38. e4h7      h4h7
+   39. f1e1      h3g5
+   40. h1g1      h7h2
+   41. g1f1      h2h1
+
+  Game over: 0-1
+
+  Result: 0-1
+  Total half-moves: 82
+  Saved: D:\develop\chess\data\standard_rev_20260820_014455.pgn
+  Swapped stopped.
+  Original stopped.
+
+----------------------------------------------------------------------
+  ATOMIC_REV: ATOMIC
+  White: Swapped | Black: Original
+----------------------------------------------------------------------
+  Starting Swapped...
+  Swapped started
+  Starting Original...
+  Original started
+    EvalFile = D:\develop\chess\NNUE\Swapped\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Swapped\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Swapped ready (atomic)
+    EvalFile = D:\develop\chess\NNUE\Original\nn-46832cfbead3.nnue
+    VariantPath = D:\develop\chess\NNUE\Original\atomic-2cf13ff256cc.nnue
+    Hash = 256
+    Threads = 4
+    UCI_LimitStrength = false
+    Skill Level = 20
+    Use NNUE = true
+  Original ready (atomic)
+
+============================================================
+Match: Swapped (W) vs Original (B)
+Variant: atomic
+============================================================
+
+    1. g1h3      h7h6
+    2. e2e3      e7e6
+    3. b1c3      f8b4
+    4. d1h5      g7g6
+    5. h5b5      c7c6
+    6. b5b7      f7f5
+    7. e1d1      d7d5
+    8. d2d4      e6e5
+    9. h3f4      e5d4
+   10. c2c3      d5d4
+   11. f4e6      d8b8
+   12. e6c7      e8f7
+   13. c7a6      b8d8
+   14. c3b4      d8a5
+   15. f1c4      f7e7
+   16. b2b4      a5a4
+   17. c4b3      a4b5
+   18. b3c4      b5a4
+   19. c4b3      a4b5
+   20. b3c4
+  Draw by 3-fold repetition (position seen 3 times)
+
+  Result: 1/2-1/2
+  Total half-moves: 40
+  Saved: D:\develop\chess\data\atomic_rev_20260820_014538.pgn
+  Swapped stopped.
+  Original stopped.
+
+======================================================================
+  ALL MATCHES COMPLETE!
+  PGN files: D:\develop\chess\data
+  Import to Lichess for visualization & analysis
+======================================================================
